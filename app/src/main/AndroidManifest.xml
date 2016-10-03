@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gawds.nitkkr.com.selleasy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SpalshScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login"/>
+        <activity android:name=".Manage"/>
+        <activity android:name=".Manage_item"/>
+        <activity android:name=".product_details"/>
+        <activity android:name=".Sell"/>
+        <activity android:name=".Buy"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".About_us"/>
+        <activity android:name=".productList"/>
+    </application>
+
+</manifest>
