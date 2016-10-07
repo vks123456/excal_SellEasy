@@ -1,4 +1,3 @@
-
 <resources>
     <string name="app_name">SellEasy</string>
     <string name="action_settings">Settings</string>
@@ -12,4 +11,6 @@
         <item>About us</item>
     </string-array>
     <string name="title_activity_login">login</string>
+    <string name="title_activity_navigation">navigation</string>
+
 </resources>

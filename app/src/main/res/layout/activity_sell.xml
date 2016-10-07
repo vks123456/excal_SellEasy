@@ -126,7 +126,7 @@
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:id="@+id/category"
+        android:id="@+id/spin_cat"
         android:prompt="@string/spinner_title"
         android:layout_toEndOf="@+id/textView5"
         android:layout_alignBottom="@+id/textView6"
@@ -140,21 +140,15 @@
         android:background="@drawable/camera_image"
         android:layout_above="@+id/buttonAlert"
         android:layout_alignStart="@+id/textView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Take a Snap"
-        android:id="@+id/textView"
-        android:shadowColor="#d01515"
-        android:gravity="center"
-        android:textColorHighlight="#d61f1f"
-        android:textIsSelectable="false"
-        android:textStyle="bold"
-        android:layout_above="@+id/btnSelectPhoto"
-        android:layout_centerHorizontal="true" />
-
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxHeight="40dp"
+    android:layout_below="@id/spin_cat"
+    android:id="@+id/imgView"
+    android:layout_above="@id/btnSelectPhoto"
+    android:scaleType="fitCenter"
+    android:layout_centerInParent="true"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="35dp"
@@ -165,6 +159,22 @@
         android:theme="@style/Base.Animation.AppCompat.DropDownUp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Take a Snap"
+        android:visibility="invisible"
+        android:id="@+id/textView"
+        android:shadowColor="#d01515"
+        android:gravity="center"
+        android:textColorHighlight="#d61f1f"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        android:layout_above="@+id/btnSelectPhoto"
+        android:layout_centerHorizontal="true" />
+
+
 
 </RelativeLayout>
 
